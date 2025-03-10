@@ -3,6 +3,10 @@
 
 :root {
     --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
+
 }
 
 body {
@@ -158,9 +162,27 @@ h2 {
     flex-direction: column;
 }
 
+/*alto contraste*/
 .opcoes-acessibilidade button{
     margin-bottom: 5px;
 }
 .apresenta-lista{
     display: none;
 }
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link {
+    color: var(--alto-contraste-link);
+}
+
