@@ -10,11 +10,18 @@ document.addEventListener('DOMContentloaded,' function(){
     const aumentafontebotao = document.getElementById('aumentar-fonte');
     const diminuifontebotao = document.getElementById('diminuir-fonte');
 
+    const alternarcontraste=document.getElementById('alterna-contraste')
+
 let tamanhoatualfonte = 1;
 
 aumentafontebotao.addEventListener('click',function(){
     tamanhoatualfonte += 0.1;
 document.body.style.fontSize = `${tamahoatualfonte}rem`
+
+})
+
+alternarcontraste.addEventListener('click',function(){
+  document.body.classList.toggle('alto-contraste')
 })
 
 diminuifontebotao.addEventListener('click',function(){
