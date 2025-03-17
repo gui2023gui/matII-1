@@ -5,6 +5,9 @@ document.addEventListener('DOMContentloaded,' function(){
   botaodeacessibilidade.addEventListener('click',function (){
     botaodeacessibilidade.classList.toggle('rotacao-botao');
     opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
+
+const botaoselecionado = botaodeacessibilidade.getAttribute('aria-expanded') === 'true';
+botaodeacessibilidade.setAttribute('aria-expanded0',!botaoselecionado)
   })
 
     const aumentafontebotao = document.getElementById('aumentar-fonte');
