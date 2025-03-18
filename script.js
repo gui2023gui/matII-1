@@ -35,3 +35,8 @@ document.body.style.fontSize = `${tamahoatualfonte}rem`
 
 
 })
+
+scrollReveal().Reveal('#inicio'.tagline', {delay :500});
+scrollReveal().Reveal('#tropicalia'.tagline', {delay :500});
+scrollReveal().Reveal('#galeria'.tagline', {delay :500});
+scrollReveal().Reveal('#contato'.tagline', {delay :500});
